@@ -16,7 +16,7 @@ pipeline {
         }
         stage('build docker image'){
             steps{
-                sh 'docker build -t ${dockerImage} . '
+                sh 'docker build -t maven1 . '
             }
         }
     }

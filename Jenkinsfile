@@ -17,8 +17,13 @@ pipeline {
         stage('build docker image'){
             steps{
                 script {
-                sh 'docker build -t maven1 . '
+                sh 'docker build -t sdineshgandhi/maven1:latest . '
                 }
+            }
+        }
+        stage('Docker push'){
+            step{
+                'sh '
             }
         }
     }

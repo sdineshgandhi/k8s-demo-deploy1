@@ -21,10 +21,6 @@ pipeline {
                 }
             }
         }
-        stage('Docker push'){
-            step{
-                'sh '
-            }
-        }
+        
     }
 }

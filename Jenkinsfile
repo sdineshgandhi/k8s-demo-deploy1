@@ -32,7 +32,7 @@ pipeline {
         
                 }
             }
-        stage(Deploy to K8S){
+        stage('Deploy to K8S'){
             steps {
                 script {
                      withCredentials([file(credentialsId: 'kubeconfig', variable: 'KUBECONFIG')]) {
